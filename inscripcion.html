@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="logo.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>El juego del calamar</title>
+</head>
+
+<body>
+    <script src="js/script.js"></script>
+
+    <div class="topnavdos">
+        <a href="index.html">Inicio</a>
+        <a href="juegos.html">Juegos</a>
+        <a class="active">Inscripción</a>
+    </div>
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <p><span>Llena el formulario para inscribirte a los juegos.</span></p>
+                        <form class="requires-validation" novalidate>
+
+                            <div class="row">
+                                <div class="col">
+                                <label for="nombre"><span>Nombre</span></label>
+                                <input class="form-control" type="text" name="nombre" placeholder="Juan Carlos" required>
+                                <div class="valid-feedback"><span>¡Nombre válido!</div>
+                                <div class="invalid-feedback"><span>¡Este espacio no puede quedar vacío!</span></div>
+                            </div>
+                            <div class="col">
+                                <label for="apellido"><span>Apellido</span></label>
+                                <input class="form-control" type="text" name="apellido" placeholder="Perez" required>
+                                <div class="valid-feedback"><span>¡Apellido válido!</span></div>
+                                <div class="invalid-feedback"><span>Este espacio no puede quedar vacío!</span></div>
+                            </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                <label for="nombre"><span>Edad</span></label>
+                                <input class="form-control" type="number" name="edad" placeholder="18" required>
+                                <div class="valid-feedback"><span>¡Edad válida!</span></div>
+                                <div class="invalid-feedback"><span>¡Este espacio no puede quedar vacío!</span></div>
+                            </div>
+                            <div class="col">
+                                <label for="nombre"><span>DNI</span></label>
+                                <input class="form-control" type="number" name="DNI" placeholder="20000000" required>
+                                <div class="valid-feedback"><span>¡DNI válido!</span></div>
+                                <div class="invalid-feedback"><span>¡Este espacio no puede quedar vacío!</span></div>
+                            </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                <label for="nombre"><span>País de origen</span></label>
+                                <input class="form-control" type="text" name="pais" placeholder="Argentina" required>
+                                <div class="valid-feedback"><span>¡País válido!</span></div>
+                                <div class="invalid-feedback"><span>¡Este espacio no puede quedar vacío!</span></div>
+                            </div>
+                            <div class="col">
+                                <label for="nombre"><span>Provincia</span></label>
+                                <input class="form-control" type="text" name="provincia" placeholder="Buenos Aires" required>
+                                <div class="valid-feedback"><span>¡Provincia válida!</span></div>
+                                <div class="invalid-feedback"><span>¡Este espacio no puede quedar vacío!</span></div>
+                            </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                <label for="nombre"><span>Localidad</span></label>
+                                <input class="form-control" type="text" name="localidad" placeholder="CABA" required>
+                                <div class="valid-feedback"><span>¡Localidad válida!</span></div>
+                                <div class="invalid-feedback"><span>¡Este espacio no puede quedar vacío!</span></div>
+                            </div>
+                            <div class="col">
+                                <label for="nombre"><span>Domicilio</span></label>
+                                <input class="form-control" type="text" name="domicilio" placeholder="Calle falsa 123" required>
+                                <div class="valid-feedback"><span>¡Domicilio válido!</span></div>
+                                <div class="invalid-feedback"><span>¡Este espacio no puede quedar vacío!</span></div>
+                            </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="nombre"><span>Correo</span></label>
+                                <input class="form-control" type="email" name="email" placeholder="mail@gmail.com"
+                                    required>
+                                <div class="valid-feedback"><span>¡Correo válido!</span></div>
+                                <div class="invalid-feedback"><span>¡Este espacio no puede quedar vacío!</span></div>
+                            </div>
+
+                            <div class="col-md-12 mt-3">
+                                <label class="mb-3 mr-1" for="genero"><span>Género:</span></label>
+
+                                <input type="radio" class="btn-check" name="genero" id="masculino" autocomplete="off"
+                                    required>
+                                <label class="btn btn-sm btn-outline-secondary" for="masculino"><span>Masculino</span></label>
+
+                                <input type="radio" class="btn-check" name="genero" id="femenino" autocomplete="off"
+                                    required>
+                                <label class="btn btn-sm btn-outline-secondary" for="femenino"><span>Femenino</span>></label>
+
+                                <input type="radio" class="btn-check" name="genero" id="Otro" autocomplete="off"
+                                    required>
+                                <label class="btn btn-sm btn-outline-secondary" for="Otro"><span>Otro</span></label>
+                                <div class="valid-feedback mv-up"><span>¡Género elegido!</span></div>
+                                <div class="invalid-feedback mv-up"><span>¡Elige un género!</span></div>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label"><span>Doy mi consentimiento para participar en los juegos.</span></label>
+                                <div class="invalid-feedback"><span>¡No te puedes registrar si no esta tu consentimiento!</span>
+                                </div>
+                            </div>
+
+
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary">¡Registrarme!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <div class="footer">
+        <div class="containerfooter">
+
+            <div class="footerbox">
+                <br><br><br><br>
+                <h5><span>¡Siguenos en las redes como espectador!</span></h5>
+                <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.google.com" class="fa fa-google" target="_blank"></a>
+                <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+                <a href="https://www.reddit.com" class="fa fa-reddit" target="_blank"></a>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+
+body{
+  max-width:100%!important;
+  height: auto!important;
+  background-color: #464646!important;
+  background-image:url("../imgs/background.png");
+  font-family: "Lucida Console", "Courier New", monospace!important;
+  margin:0;
+  padding:0;
+  min-height: 100%;
+}
+
+.contenedor{
+    width:100%;
+    /* max-width:1000px; */
+    /* margin:20px auto; */
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(5, auto);
+    grid-template-areas:"topnav topnav topnav"
+                        "header header header"
+                        "contenido contenido sidebar"
+                        "footer footer footer";
+}
+
+.contenedor>div,
+.contenedor .topnav,
+.contenedor .contenido,
+.contenedor .header,
+.contenedor .sidebar,
+.contenedor .footer
+{
+    padding:20px;
+    border-radius:4px;
+}
+
+.contenedor .topnav {
+    background-color:black!important;
+    overflow: hidden!important;
+    /* grid-column-start: 1!important;
+    grid-column-end: -1!important; */
+    grid-area:topnav;
+    color: whitesmoke!important;
+    text-shadow: 5px 5px 8px pink, 0 0 25px blue, 0 0 5px black!important;
+    font-size: 30px!important;
+    text-align:center!important;
+    font-weight: bold!important;
+  }
+  
+.contenedor  .topnav a {
+    float: left!important;
+    color: #f2f2f2!important;
+    text-align: center!important;
+    padding: 14px 16px!important;
+    text-decoration: none!important;
+    font-size: 17px!important;
+    font-family: "Lucida Console", "Courier New", monospace!important;
+
+ 
+  }
+  
+.contenedor .topnav a:hover {
+    background-color: #ddd!important;
+    color: black!important;
+  }
+  
+.contenedor .topnav a.active {
+  background-color: rgb(240, 44, 76);
+    color: white!important;
+    opacity:1!important;
+  }
+.contenedor .header{
+    color: whitesmoke!important;
+    text-shadow: 5px 5px 8px pink, 0 0 25px blue, 0 0 5px black!important;
+    font-size: 30px!important;
+    text-align:center!important;
+    font-weight: bold!important;
+    grid-area:header;
+}
+
+.contenedor .header span{
+    background-color:black!important;
+}
+
+.contenedor .contenido{
+    /* grid-column:span2; */
+    color: whitesmoke!important;
+    text-shadow: 5px 5px 8px pink, 0 0 25px blue, 0 0 5px black!important;
+    font-size: 30px!important;
+    text-align:center!important;
+    font-weight: bold!important;
+    grid-area:contenido;
+
+
+}
+
+h2{
+    color: whitesmoke!important;
+    text-shadow: 5px 5px 8px pink, 0 0 25px blue, 0 0 5px black!important;
+    font-size: 60px!important;
+    text-align:center!important;
+    font-weight: bold!important;
+}
+h3{
+    color: whitesmoke!important;
+    text-shadow: 5px 5px 8px pink, 0 0 25px blue, 0 0 5px black!important;
+    font-size: 60px!important;
+    text-align:center!important;
+    font-weight: bold!important;
+}
+
+
+body span{
+    background-color:black!important;
+}
+
+.contenedor .sidebar {
+	grid-column: 3 / 4;
+	background:black;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	grid-area: sidebar;
+    animation-name:sidebar;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+
+}
+
+@keyframes sidebar
+{
+    0%{background-color:black;}
+    50%{background-color:white;}
+}
+
+.contenedor .footer{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: whitesmoke!important;
+    text-shadow: 5px 5px 8px pink, 0 0 25px blue, 0 0 5px black!important;
+    font-size: 30px!important;
+    text-align:center!important;
+    font-weight: bold!important;
+    font-family: "Lucida Console", "Courier New", monospace!important;
+    /* grid-column:span 3; */
+    grid-area:footer;
+}
+
+@media screen and(max-width:768px)
+{
+    .contenedor{
+        grid-template-areas:"topnav topnav topnav"
+                             "header header header"
+                             "contenido contenido contenido"
+                             "sidebar sidebar sidebar"
+                             "footer footer footer";
+    }
+}
+
+.fa {
+    padding: 20px!important;
+    font-size: 30px!important;
+    width: 30px!important;
+    text-align: center!important;
+    text-decoration: none!important;
+    margin: 5px 2px!important;
+    border-radius: 50%!important;
+  }
+  
+  .fa:hover {
+      opacity: 0.7!important;
+  }
+  
+  .fa-facebook {
+    background: #3B5998!important;
+    color: white!important;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE!important;
+    color: white!important;
+  }
+  
+  .fa-google {
+    background: #dd4b39!important;
+    color: white!important;
+  }
+  
+  
+  .fa-youtube {
+    background: #bb0000!important;
+    color: white!important;
+  }
+  
+  .fa-instagram {
+    background: #125688!important;
+    color: white!important;
+  }
+  
+  
+  .fa-reddit {
+    background: #ff5700!important;
+    color: white!important;
+  }
+
+  .form-control{
+    background-color:black!important;
+    color:white!important;
+}
+
+.form-check{
+  background-color:black;
+}
+
+
+
+/* aca empieza el css del formulario y los juegos */
+
+
+h1{
+  color: whitesmoke;
+  text-shadow: 5px 5px 8px pink, 0 0 25px blue, 0 0 5px black;
+  text-align:center;
+  font-size: 60px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h1 span{
+  background-color:black;
+}
+
+h5{
+  color: whitesmoke!important;
+  text-shadow: 5px 5px 8px pink, 0 0 25px blue, 0 0 5px black!important;
+  font-size: 30px!important;
+  text-align:center!important;
+  font-weight: bold!important;
+  font-family: "Lucida Console", "Courier New", monospace!important;
+  /*background-color: black;*/
+}
+
+h5 span{
+  background-color:black!important;
+}
+
+body{
+  max-width:100%!important;
+  height: auto!important;
+  color: whitesmoke!important;
+  text-shadow: 5px 5px 8px pink, 0 0 25px blue, 0 0 5px black!important;
+  font-size: 30px!important;
+  text-align:center;
+  font-weight: bold!important;
+  font-family: "Lucida Console", "Courier New", monospace!important;
+}
+
+.footerbox{
+  text-align: center!important;
+}
+/* Add a black background color to the top navigation */
+.topnavdos {
+  background-color: black!important;
+  overflow: hidden!important;
+}
+
+/* Style the links inside the navigation bar */
+.topnavdos a {
+  float: left!important;
+  color: #f2f2f2!important;
+  text-align: center!important;
+  padding: 14px 16px!important;
+  text-decoration: none!important;
+  font-size: 17px!important;
+  font-family: "Lucida Console", "Courier New", monospace!important;
+}
+
+/* Change the color of links on hover */
+.topnavdos a:hover {
+  background-color: #ddd!important;
+  color: black!important;
+}
+
+/* Add a color to the active/current link */
+.topnavdos a.active {
+  background-color: rgb(240, 44, 76)!important;
+  color: white!important;
+  opacity:1!important;
+}
+
+ol.list{
+    list-style-type:upper-roman!important;
+    list-style-position: inside!important;
+}
+.textomain{
+  color: whitesmoke;
+  text-shadow: 5px 5px 8px pink, 0 0 25px blue, 0 0 5px black;
+  font-size: 30px;
+  text-align:center;
+  font-weight: bold;
+  /*background-color: black;*/
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.textomain span{
+    background-color:black;
+}
+
+.reglas{
+  color: whitesmoke;
+  text-shadow: 5px 5px 8px pink, 0 0 25px blue, 0 0 5px black;
+  font-size: 30px;
+  text-align:center;
+  font-weight: bold;
+  /*background-color: black;*/
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.reglas span{
+  background-color:black;
+}
+
+.form-control{
+    background-color:black!important;
+    color:white!important;
+}
+
+.form-check{
+  background-color:black;
+}
+
+/* .form-check-label
+{
+    background-color:black!important;
+} */
+
+.fa {
+  padding: 20px!important;
+  font-size: 30px!important;
+  width: 30px!important;
+  text-align: center!important;
+  text-decoration: none!important;
+  margin: 5px 2px!important;
+  border-radius: 50%!important;
+}
+
+.fa:hover {
+    opacity: 0.7!important;
+}
+
+.fa-facebook {
+  background: #3B5998!important;
+  color: white!important;
+}
+
+.fa-twitter {
+  background: #55ACEE!important;
+  color: white!important;
+}
+
+.fa-google {
+  background: #dd4b39!important;
+  color: white!important;
+}
+
+
+.fa-youtube {
+  background: #bb0000!important;
+  color: white!important;
+}
+
+.fa-instagram {
+  background: #125688!important;
+  color: white!important;
+}
+
+
+.fa-reddit {
+  background: #ff5700!important;
+  color: white!important;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.desc
+{
+  background-color:black;
+}
